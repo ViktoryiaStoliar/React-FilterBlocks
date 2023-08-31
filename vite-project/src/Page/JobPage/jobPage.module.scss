@@ -1,0 +1,54 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .list{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .item {
+        border-radius: 12px;
+        border: 1px solid var(--grey-200, #EAEBED);
+        background: #FFF;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 30px;
+    }
+
+    h2 {
+        color: #5E96FC;
+        font: 600 20px Inter;
+        line-height: normal;
+    }
+
+    .flex {
+        display: flex;
+        gap: 20px
+    }
+
+    .salary {
+        color: #232134;
+        font: 600 16px Inter;
+        line-height: 20px;
+    }
+
+    p {
+        color: #232134;
+        font: 400 16px Inter;
+        line-height: 20px;
+    }
+
+    .img {
+        background-image: url('./assets/Location/M.svg');
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+
+}
