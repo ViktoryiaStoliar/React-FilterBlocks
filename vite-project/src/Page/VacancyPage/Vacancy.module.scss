@@ -1,23 +1,15 @@
-.wrapper {
+.cardWrapper {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 13px;
 
-    .list {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-    }
+    padding: 24px 0 24px 24px;
+    max-width: 773px;
+    margin: 16px auto;
 
-    .item {
-        border-radius: 12px;
-        border: 1px solid var(--grey-200, #EAEBED);
-        background: #FFF;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        padding: 30px;
-    }
+    border-radius: 12px;
+    border: 1px solid #eaebed;
+    background: #fff;
 
     h2 {
         color: #5E96FC;
@@ -25,30 +17,81 @@
         line-height: normal;
     }
 
-    .flex {
+    .description {
         display: flex;
-        gap: 20px
+        gap: 12px;
+
+        p {
+            color: #232134;
+            font: 600 16px Inter;
+            line-height: 20px;
+
+            &::after {
+                content: "•";
+                color: #7b7c88;
+                padding-left: 12px;
+            }
+        }
+
+        div {
+            color: #232134;
+            font: 400 16px Inter;
+            line-height: 20px;
+        }
     }
 
-    .salary {
-        color: #232134;
-        font: 600 16px Inter;
-        line-height: 20px;
+        .location {
+            display: flex;
+            gap: 8px;
+
+            .img {
+                background-image: url('../VacancyPage/assets/M.svg');
+                width: 20px;
+                height: 20px;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+
+            p {
+                color: #232134;
+                font: 400 16px Inter;
+                line-height: normal;
+            }
+        }
     }
 
-    p {
-        color: #232134;
-        font: 400 16px Inter;
-        line-height: 20px;
+    .requirementsWrapper {
+        max-width: 773px;
+        margin: 16px auto;
+        padding: 24px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        background: #fff;
+        border-radius: 12px;
+        border: 1px solid #eaebed;
+
+        .responsibilities,
+        .requirements,
+        .conditions {
+            h2 {
+                color: #232134;
+                // font-feature-settings: "clig" off, "liga" off;
+                font: 700 20px Inter;
+                line-height: 20px;
+            }
+
+            ul {
+                padding-left: 24px;
+                margin-top: 16px;
+
+                li {
+                    color: #232134;
+                    font: 400 16px Inter;
+                    line-height: 140%;
+                }
+            }
+        }
     }
-
-    .img {
-        background-image: url('../VacancyPage/assets/M.svg');
-        width: 20px;
-        height: 20px;
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-
-
-}
